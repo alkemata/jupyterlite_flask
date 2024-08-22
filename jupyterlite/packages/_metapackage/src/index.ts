@@ -1,0 +1,15 @@
+import '@jupyterlite/application';
+import '@jupyterlite/application-extension';
+import '@jupyterlite/contents';
+import '@jupyterlite/repl-extension';
+import '@jupyterlite/iframe-extension';
+import '@jupyterlite/kernel';
+import '@jupyterlite/licenses';
+import '@jupyterlite/localforage';
+import '@jupyterlite/notebook-application-extension';
+import '@jupyterlite/server';
+import '@jupyterlite/server-extension';
+import '@jupyterlite/session';
+import '@jupyterlite/settings';
+import '@jupyterlite/types';
+import '@jupyterlite/ui-components';

@@ -15,9 +15,12 @@ RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - && \
     apt-get install -y nodejs && \
     npm install -g npm@latest
 
-
-
+# Install JupyterLab extension development tools
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir jupyter-packaging jupyterlab-git
+RUN npm install -g jupyterlab-create-extension
+
+
 RUN jupyter lite build 
 CMD jupyter lite serve

@@ -2,5 +2,4 @@ jupyterlab
 jupyterlite-core
 jupyter-packaging
 jupyterlab-git
-jupyterlab-create-extension
 jupyterlite-pyodide-kernel

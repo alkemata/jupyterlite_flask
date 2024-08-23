@@ -3,5 +3,5 @@ jupyterlite-core
 jupyter-packaging
 jupyterlab-git
 jupyterlite-pyodide-kernel
-copier=9.2
+copier~=9.2
 jinja2-time

@@ -20,7 +20,7 @@ RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - && \
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 RUN pip install --no-cache-dir jupyter-packaging jupyterlab-git
-RUN pipx install copier
+
 
 
 RUN jupyter lite build 

@@ -1,6 +1,9 @@
 # Dockerfile
 FROM python:3.9-slim
 
+run mkdir /app
+run mkdir /app/jupyterlite
+
 WORKDIR /app/jupyterlite
 
 # Install system dependencies

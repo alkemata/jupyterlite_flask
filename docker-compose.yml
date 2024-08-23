@@ -14,7 +14,7 @@ services:
       traefik.docker.network: traefik_web
       traefik.http.routers.flaskapp.entrypoints: websecure
       traefik.http.routers.flaskapp.rule: 'Host(`jupyterlite.alkemata.com`)'
-      traefik.http.services.flaskapp.loadbalancer.server.port: 5000
+      traefik.http.services.flaskapp.loadbalancer.server.port: 8000
     networks:
       - traefik_web
 

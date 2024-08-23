@@ -6,7 +6,7 @@ services:
  jupyterliteapp:
     build: .
     volumes:
-      - ./app:/app/
+      - ./jupyterlite:/jupyterlite/
     environment:
       - PYTHONUNBUFFERED=1
     labels:

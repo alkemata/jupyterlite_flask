@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
     git \
+    pipx \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Node.js and npm (needed for JupyterLab extensions)

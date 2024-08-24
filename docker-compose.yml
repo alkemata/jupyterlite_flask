@@ -18,5 +18,8 @@ services:
     #  traefik.http.routers.flaskapp.rule: 'Host(`jupyterlite.alkemata.com`)'
     #  traefik.http.services.flaskapp.loadbalancer.server.port: 8000
     networks:
-      - default
+      - jup_default
 
+networks:
+  jup_default:
+    driver: bridge

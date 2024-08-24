@@ -21,5 +21,5 @@ services:
       - jup_default
 
 networks:
-  jup_default:
+  - jup_default:
      external:true

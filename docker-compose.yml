@@ -22,4 +22,4 @@ services:
 
 networks:
   jup_default:
-    driver: bridge
+     external:true

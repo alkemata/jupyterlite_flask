@@ -11,15 +11,15 @@ services:
       - "8000:8000"
     environment:
       - PYTHONUNBUFFERED=1
-    #labels:
-    #  traefik.enable: true
-    #  traefik.docker.network: traefik_web
-    #  traefik.http.routers.flaskapp.entrypoints: websecure
-    #  traefik.http.routers.flaskapp.rule: 'Host(`jupyterlite.alkemata.com`)'
-    #  traefik.http.services.flaskapp.loadbalancer.server.port: 8000
+    labels:
+      traefik.enable: true
+      traefik.docker.network: traefik_web
+      traefik.http.routers.flaskapp.entrypoints: websecure
+      traefik.http.routers.flaskapp.rule: 'Host(`jupyterlite.alkemata.com`)'
+      traefik.http.services.flaskapp.loadbalancer.server.port: 8000
     networks:
-      - jup_default
+      - traefik_web
 
 networks:
-  jup_default:
+  traefik_web:
     external: true

@@ -26,6 +26,4 @@ RUN pip install --no-cache-dir jupyter-packaging jupyterlab-git
 
 
 #execute
-#CMD [ "tail", "-f", "/dev/null" ]
-CMD cd ./jupyter_flask_app
-CMD jupyter lite serve
+CMD [ "tail", "-f", "/dev/null" ]

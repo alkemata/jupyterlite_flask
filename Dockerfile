@@ -26,5 +26,4 @@ RUN pip install --no-cache-dir jupyter-packaging jupyterlab-git
 
 
 #execute
-RUN jupyter lite build 
-CMD jupyter lite serve
+CMD /bin/bash

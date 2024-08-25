@@ -26,4 +26,4 @@ RUN pip install --no-cache-dir jupyter-packaging jupyterlab-git
 
 
 #execute
-CMD /bin/bash
+CMD [ "tail", "-f", "/dev/null" ]
